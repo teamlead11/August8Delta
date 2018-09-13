@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\resources\\feature\\BookAflight\\RoundTrip.feature", glue = {
-		"com.stepdefinition" }, plugin = {"json:target/TestResult.json" }, dryRun = false, monochrome = true)
+		"com.stepdefinition" }, plugin = {"json:/src/resources/java/cucumber-json-report.json" }, dryRun = false, monochrome = true)
 
 public class TestRunner {
 
